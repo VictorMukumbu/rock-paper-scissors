@@ -17,7 +17,10 @@ const getHumanChoice=()=>{
 let humanScore =0;
 let computerScore =0;
 
-const playRound =(humanChoice,computerChoice)=>{
+
+
+const playGame =()=>{
+    const playRound =(humanChoice,computerChoice)=>{
     if(humanChoice.toLowerCase()==="rock" && computerChoice.toLowerCase()==="paper"){
         console.log(`your choice is ${humanChoice} and the computer choice is ${computerChoice}`)
         console.log("you have lost,Paper beats rock")
@@ -69,6 +72,4 @@ const computerSelection = getComputerChoice();
 playRound(humanSelection, computerSelection);
 
 
-const playGame =()=>{
-    
 }
