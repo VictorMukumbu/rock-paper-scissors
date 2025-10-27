@@ -8,3 +8,11 @@ const getComputerChoice =()=>{
     }
    
 }
+console.log(getComputerChoice())
+
+
+const getHumanChoice=()=>{
+    let humanChoice=prompt("Enter your choice")
+    return humanChoice
+}
+console.log(getHumanChoice())
