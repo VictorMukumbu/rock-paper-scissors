@@ -8,11 +8,67 @@ const getComputerChoice =()=>{
     }
    
 }
-console.log(getComputerChoice())
 
 
 const getHumanChoice=()=>{
-    let humanChoice=prompt("Enter your choice")
-    return humanChoice
+    return prompt("Enter your choice")
 }
-console.log(getHumanChoice())
+
+let humanScore =0;
+let computerScore =0;
+
+const playRound =(humanChoice,computerChoice)=>{
+    if(humanChoice.toLowerCase()==="rock" && computerChoice.toLowerCase()==="paper"){
+        console.log(`your choice is ${humanChoice} and the computer choice is ${computerChoice}`)
+        console.log("you have lost,Paper beats rock")
+        computerScore +=1
+    }
+
+    else if(computerChoice.toLowerCase()==="rock" && humanChoice.toLowerCase()==="paper"){
+        console.log(`your choice is ${humanChoice} and the computer choice is ${computerChoice}`)
+        console.log("you have won,Paper beats rock")
+        humanScore +=1
+    }
+
+
+    else if(computerChoice.toLowerCase()==="scissors" && humanChoice.toLowerCase()==="paper"){
+        console.log(`your choice is ${humanChoice} and the computer choice is ${computerChoice}`)
+        console.log("you have lost,Scissors beats paper")
+        computerScore +=1
+    }
+    else if(computerChoice.toLowerCase()==="paper" && humanChoice.toLowerCase()==="scissors"){
+        console.log(`your choice is ${humanChoice} and the computer choice is ${computerChoice}`)
+        console.log("you have won,Scissors beats Paper")
+        humanScore +=1
+    }
+
+
+    else if(computerChoice.toLowerCase()==="rock" && humanChoice.toLowerCase()==="scissors"){
+        console.log(`your choice is ${humanChoice} and the computer choice is ${computerChoice}`)
+        console.log("you have lost,Rock beats Scissors")
+        computerScore +=1
+    }
+    else if(computerChoice.toLowerCase()==="scissors" && humanChoice.toLowerCase()==="rock"){
+        console.log(`your choice is ${humanChoice} and the computer choice is ${computerChoice}`)
+        console.log("you have won,Rock beats Scissors")
+        humanScore +=1
+    }
+    else{
+        console.log(`your choice is ${humanChoice} and the computer choice is ${computerChoice}`)
+        console.log("No one wins")
+
+    }
+    console.log(`Your score is ${humanScore}`)
+    console.log(`Computer Score is ${computerScore}`)
+
+
+}
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
+
+
+const playGame =()=>{
+    
+}
