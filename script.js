@@ -71,5 +71,21 @@ const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
 
+//computerScore >humanScore ? "Computer wins" :" You win"
 
+
+}
+for(let i=0;i<5;i++){
+    playGame()
+
+    if(computerScore>humanScore){
+        console.log("Computer Wins")
+    }
+    else if(humanScore>computerScore){
+        console.log("You win")
+    }
+    else{
+        console.log("Its a draw.No one wins")
+    }
+     
 }
