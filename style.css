@@ -1,0 +1,30 @@
+body{
+    font-size: large;
+    text-align: center;
+    background-color:maroon ;
+    color: whitesmoke;
+}
+#choiceDiv{
+    background-color: rgb(46, 3, 46);
+    color: rgb(219, 189, 189);
+    margin: 100px 500px;
+    padding: 100px;
+}
+button{
+    padding: 10px 30px;
+    margin: 20px;
+}
+button:hover{
+    background-color: rgb(201, 101, 7);
+    color: white;
+}
+.winnerMsg{
+    padding: 30px 10px;
+    background-color: rgb(233, 6, 6);
+    color: aliceblue;
+}
+.scoreDsp{
+    background-color: aliceblue;
+    color: rgb(233, 6, 6);
+    padding: 30px 8px;
+}
