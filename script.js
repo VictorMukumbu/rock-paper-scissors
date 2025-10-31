@@ -75,17 +75,22 @@ playRound(humanSelection, computerSelection);
 
 
 }
-for(let i=0;i<5;i++){
-    playGame()
+let rockBtn =document.createElement("button")
+let paperBtn =document.createElement("button")
+let scissorsBtn =document.createElement("button")
 
-    if(computerScore>humanScore){
-        console.log("Computer Wins")
-    }
-    else if(humanScore>computerScore){
-        console.log("You win")
-    }
-    else{
-        console.log("Its a draw.No one wins")
-    }
-     
-}
+const choiceDiv =document.querySelector("#choiceDiv")
+let headP=document.createElement("p")
+
+
+rockBtn.textContent="Rock"
+paperBtn.textContent="Paper"
+scissorsBtn.textContent="Scissors"
+headP.textContent ="Welcome to the arena /n choose either rock paper or scissors using the buttons and wait for results"
+
+choiceDiv.appendChild(headP)
+choiceDiv.appendChild(rockBtn)
+choiceDiv.appendChild(paperBtn)
+choiceDiv.appendChild(scissorsBtn)
+
+
